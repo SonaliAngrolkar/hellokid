@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--OPTION PAGE SELECT ANIMAL OR HUMAN BODY -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".MainActivity2">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true"
+        tools:ignore="MissingConstraints">
+
+        <!--MAIN LAYOUT-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@color/grey"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!--FIRST OPTION-->
+                <LinearLayout
+                    android:id="@+id/animal"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/pic1"
+                    android:orientation="vertical" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ANIMAL"
+                    android:textAlignment="center"
+                    android:textStyle="bold"></TextView>
+
+                <!--SECOND OPTION-->
+                <LinearLayout
+                    android:id="@+id/humanbody"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/pic2"
+                    android:orientation="vertical"
+                    tools:ignore="DuplicateIds"></LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HUMAN BODY"
+                    android:textAlignment="center"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <!--DEVELOPER DETAILS-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@color/purple_500"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="AstronEra Project"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Sandeshaher11@gmail.com"
+                    android:textColor="@color/white"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="8975658453"
+                    android:textColor="@color/white"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

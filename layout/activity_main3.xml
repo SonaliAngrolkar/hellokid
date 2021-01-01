@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--OPTION PAGE SELECT MAMMALS OR BIRD OR FISH -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:background="@drawable/back34">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="* click on image to play vedio"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true"
+        tools:ignore="MissingConstraints">
+
+        <!--MAIN LAYOUT-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@color/grey"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!--FIRST OPTION-->
+                <LinearLayout
+                    android:id="@+id/animal"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:id="@+id/video_frame"
+                        android:layout_width="fill_parent"
+                        android:layout_height="170dp">
+                        <ImageButton
+                            android:id="@+id/v11"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/m1"></ImageButton>
+                        <VideoView
+                            android:id="@+id/v1"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:layout_centerInParent="true"
+                            android:visibility="invisible"></VideoView>
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MAMMALS"
+                    android:textAlignment="center"
+                    android:textStyle="bold"></TextView>
+
+                <!--SECOND OPTION-->
+                <LinearLayout
+                    android:id="@+id/humanbody"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    tools:ignore="DuplicateIds">
+                    <RelativeLayout
+                        android:id="@+id/video_frame1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="170dp">
+                        <ImageButton
+                            android:id="@+id/v22"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/b1"></ImageButton>
+                        <VideoView
+                            android:id="@+id/v2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="invisible"></VideoView>
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BIRDS"
+                    android:textAlignment="center"
+                    android:textStyle="bold"></TextView>
+
+                <!--third option-->
+                <LinearLayout
+                    android:id="@+id/humanbody"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    tools:ignore="DuplicateIds">
+                    <RelativeLayout
+                        android:id="@+id/video_frame3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="170dp">
+                        <ImageButton
+                            android:id="@+id/v33"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/f1"></ImageButton>
+                        <VideoView
+                            android:id="@+id/v3"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:visibility="invisible"></VideoView>
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FISH"
+                    android:textAlignment="center"
+                    android:textStyle="bold"></TextView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- LOGIN AND REGISTRATION PAGE DESIGN-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true"
+        tools:ignore="MissingConstraints">
+
+        <!--MAIN LAYOUT-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backnew"
+            android:orientation="vertical">
+
+            <!--LOGO-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="27dp"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/logo11" />
+
+            <RelativeLayout
+                android:id="@+id/video_frame"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <!--MIDDLE LAYOUT-->
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="430dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@color/grey">
+
+                    <!--LOGIN PART-->
+                    <LinearLayout
+                        android:id="@+id/first"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="LOGIN"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold"></TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="60dp"
+                            android:text="Login ID"
+                            android:textColor="@color/purple_700"
+                            android:textStyle="bold"></TextView>
+                        <EditText
+                            android:id="@+id/loginid"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"></EditText>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Password"
+                            android:textColor="@color/purple_700"
+                            android:textStyle="bold"></TextView>
+                        <EditText
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:inputType="numberPassword"></EditText>
+                        <Button
+                            android:id="@+id/loginbtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/cylinderbutton"
+                            android:text="LOGIN"></Button>
+                        <TextView
+                            android:id="@+id/signup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="SIGNUP / FORGOT PASSWORD"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey2"
+                            android:textStyle="bold"></TextView>
+                        <TextView
+                            android:id="@+id/msg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/red"
+                            android:textStyle="bold"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--REGISTRATION PART-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_margin="10dp"
+                    android:visibility="invisible"
+                    android:id="@+id/second">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SIGN UP"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:id="@+id/msg1"
+                        android:textColor="@color/red"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Login Id"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/purple_700"></TextView>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/loginid1"
+                        android:inputType="number"></EditText>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/purple_700"
+                        ></TextView>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="numberPassword"
+                        android:id="@+id/password1"></EditText>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile Number"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/purple_700"></TextView>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="number"
+                        android:id="@+id/mobilenumber"
+                        ></EditText>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="REGISTER"
+                        android:background="@drawable/cylinderbutton"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/registerbtn"></Button>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ALREADY SIGNIN"
+                        android:textStyle="bold"
+                        android:id="@+id/signin"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/grey2"
+                        android:textAlignment="center"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*Please Insert whatsup Number"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/red"
+                        android:textAlignment="center"
+                        ></TextView>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <!--DEVELOPER INFORMATION PART-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/purple_500"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AstronEra Project"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sandeshaher11@gmail.com"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8975658453"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
